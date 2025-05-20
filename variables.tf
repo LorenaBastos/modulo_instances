@@ -4,10 +4,10 @@ variable "image_id" {
   default     = "ami-1234536543"
 }
 
-variable "bucket_name" {
+/* variable "bucket_name" {
   description = "value of the bucket name"
   type        = string
-}
+} */
 
 variable "vpc_cidr" {
   type        = string

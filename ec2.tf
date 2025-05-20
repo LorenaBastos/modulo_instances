@@ -8,7 +8,7 @@ resource "aws_instance" "webserver" {
   }
 }
 
-# create bucket
+/* # create bucket
 resource "aws_s3_bucket" "my_bucket" {
   bucket = var.bucket_name
   tags = {
@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "my_bucket" {
       aws_instance.webserver.ami
      ]
     }
-}
+} */
 
 # Imported resource
 /* import {
