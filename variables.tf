@@ -1,3 +1,8 @@
+variable "bucket_name" {
+  description = "value of the bucket name"
+  type        = string
+}
+
 variable "image_id" {
   type        = string
   description = "value of the image id"
@@ -8,6 +13,12 @@ variable "image_id" {
   description = "value of the bucket name"
   type        = string
 } */
+
+variable "ebs_block_devices" {
+  description = "lista de volumes ebs para ser criado e montando na instancia"
+  type        = list(any)
+  default     = []
+}
 
 variable "vpc_cidr" {
   type        = string
